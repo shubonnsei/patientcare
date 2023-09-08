@@ -37,4 +37,10 @@ public class PatientServiceImpl implements PatientService{
 		patientRepository.deleteById(id);
 	}
 
+	@Override
+	public Patient updatePatient(Patient patient) {
+		// TODO Auto-generated method stub
+		return patientRepository.save(patient);
+	}
+
 }
